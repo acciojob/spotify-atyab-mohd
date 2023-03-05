@@ -199,13 +199,13 @@ public class SpotifyRepository {
         if(check1 == false){
             throw new Exception("Playlist does not exist");
         }
-        if(creatorPlaylistMap.containsKey(user)){
-            return creatorPlaylistMap.get(user);
-        }
-        //creatorPlaylistMap.put(user,playlist);
-        if(playlistListenerMap.get(playlist).contains(user)){
-            return playlist;
-        }
+//        if(creatorPlaylistMap.containsKey(user)){
+//            return creatorPlaylistMap.get(user);
+//        }
+//        //creatorPlaylistMap.put(user,playlist);
+//        if(playlistListenerMap.get(playlist).contains(user)){
+//            return playlist;
+//        }
         if(userPlaylistMap.containsKey(user)){
             userPlaylistMap.get(user).add(playlist);
         }
